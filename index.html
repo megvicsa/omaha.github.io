@@ -231,7 +231,7 @@
                 imageUrl: 'https://photos.plugshare.com/photos/1163765.jpg',
                 name: 'Park Omaha 17th & Chicago Lot',
 
-                location: '1703 Chicago St, Omaha, NE 68102, USA',
+                location: '1703 Chicago St, Omaha, NE 68102, USA.',
                 originDistance: ' Miles',
                 originTime: ' Minutes',
                 destDistance: ' Miles ',
@@ -253,9 +253,9 @@
                         { type: 'CHAdeMO', value: '45' }
                     ],
                 socketAvalability: [
-                        { type: 'J1772', value: '0 available' },
-                        { type: 'CCS/SAE', value: '0 available' },
-                        { type: 'CHAdeMO', value: '1 available' }
+                        { type: 'J1772', value: '0' },
+                        { type: 'CCS/SAE', value: '0' },
+                        { type: 'CHAdeMO', value: '1' }
                     ],
 
                 energySource: '67% Grid, 33% Renewable',
@@ -277,7 +277,7 @@
                 imageUrl: 'https://photos.plugshare.com/photos/864147.jpg',
                 name: 'Jackson St Parking Garage',
 
-                location: '1011 Jackson St., Omaha 68102',
+                location: '1011 Jackson St., Omaha 68102.',
                 originDistance: ' Miles',
                 originTime: ' Minutes',
                 destDistance: ' Miles ',
@@ -293,7 +293,7 @@
                         { type: 'J1772', value: '483' }
                     ],
                 socketAvalability: [
-                        { type: 'J1772', value: '3 available' }
+                        { type: 'J1772', value: '3' }
                     ],
 
                 energySource: '72% Grid, 28% Renewable',
@@ -589,7 +589,7 @@
             content = `<p style="font-size: 16px; padding: 5px;">${infoContent}</p>`;
 
             if (infoType === 'rating') {
-                content = `<p style="font-size: 16px; padding: 5px;"><span class="stars">${station.rating}</span> <br><br> There are ${station.ratingNum} total reviews</p>`;
+                content = `<p style="font-size: 16px; padding: 5px;"><b>Rating:</b><br><span class="stars">${station.rating}</span> <br><br> There are ${station.ratingNum} total reviews.</p>`;
                 console.log('Rating clicked');
             }
 
