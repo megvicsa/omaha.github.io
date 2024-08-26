@@ -217,8 +217,8 @@
             { title: "Estimated Time to Destination", info: "0" },
             { title: "State of Charge of Battery", info: "13% charge." },
             { title: "Range of Current Battery", info: "36 minutes." },
-            { title: "Estimated Drive distance with Current Charge", info: "27 miles." },
-            { title: "Type of Chargin Socket", info: "J1772." },
+            { title: "Estimated Drive Distance with Current Charge", info: "27 miles." },
+            { title: "Type of Charging Socket", info: "J1772." },
             { title: "kW Needed to Fully Charge Your Car", info: "52.2 kW." }
         ];
 
@@ -261,13 +261,13 @@
                 energySource: '67% Grid, 33% Renewable',
 
                 chargingFee: '$1.00',
-                chargingFeeRate: 'per 2 hour charging',
+                chargingFeeRate: 'per 2 hour',
                 parkingFee: '$0.25',
-                parkingFeeRate: 'per hour parked',
+                parkingFeeRate: 'per hour',
 
-                coffee: 'Yes <br><br> There is a coffee shop in walking distance 0.3 miles away.',
-                grocery: 'Yes <br><br> There is a grocery store in walking distance 0.6 miles away.',
-                sportsClothes: 'Yes <br><br> There is a sports or clothing store in walking distance 0.5 miles away.',
+                coffee: 'Yes. <br><br> There is a coffee shop in walking distance 0.3 miles away.',
+                grocery: 'Yes. <br><br> There is a grocery store in walking distance 0.6 miles away.',
+                sportsClothes: 'Yes. <br><br> There is a sports or clothing store in walking distance 0.5 miles away.',
                 
                 rating: '★ ★ ★ ★ ✰',
                 ratingNum: '44'
@@ -299,13 +299,13 @@
                 energySource: '72% Grid, 28% Renewable',
 
                 chargingFee: '$1.00',
-                chargingFeeRate: 'per 2 hour charging',
+                chargingFeeRate: 'per 2 hour',
                 parkingFee: '$0.25',
-                parkingFeeRate: 'per hour parked',
+                parkingFeeRate: 'per hour',
 
-                coffee: 'Yes <br><br> There is a coffee shop in walking distance 0.05 miles away.',
-                grocery: 'Yes <br><br> There is a grocery store in walking distance 0.05 miles away.',
-                sportsClothes: 'Yes <br><br> There is a sports or clothing store in walking distance 0.05 miles away.',
+                coffee: 'Yes. <br><br> There is a coffee shop in walking distance 0.05 miles away.',
+                grocery: 'Yes. <br><br> There is a grocery store in walking distance 0.05 miles away.',
+                sportsClothes: 'Yes. <br><br> There is a sports or clothing store in walking distance 0.05 miles away.',
                 
                 rating: '★ ★ ★ ★ ★',
                 ratingNum: '32'
@@ -537,7 +537,7 @@
                     <button class="popup-button" onclick="showMoreInfo('${station.name}', 'socketAvalability', '<b>Socket availability:</b><br>${socketAvailabilityDetails}', '${boxId}')">Socket Availability</button>
                     <button class="popup-button" onclick="showMoreInfo('${station.name}', 'energySource', '<b>Energy source at station:</b><br>${station.energySource}.', '${boxId}')">Energy Source at Station</button>
                     <button class="popup-button" onclick="showMoreInfo('${station.name}', 'fees', '<b>Cost to charge:</b> ${station.chargingFee}. <br><br> The price ${station.chargingFeeRate} is ${station.chargingFee}.', '${boxId}')">Cost to Charge</button>
-                    <button class="popup-button" onclick="showMoreInfo('${station.name}', 'parking', '<b>Cost to park at station:</b> ${station.parkingFee} parking. <br><br> The price of parking your car at the charging station ${station.parkingFeeRate} is ${station.parkingFee}.', '${boxId}')">Cost to Park at Station</button>
+                    <button class="popup-button" onclick="showMoreInfo('${station.name}', 'parking', '<b>Cost to park at station:</b> ${station.parkingFee}. <br><br> The price of parking your car at the charging station ${station.parkingFeeRate} is ${station.parkingFee}.', '${boxId}')">Cost to Park at Station</button>
                     <button class="popup-button" onclick="showMoreInfo('${station.name}', 'coffee', '<b>Coffe shop:</b> ${station.coffee}', '${boxId}')">Coffee Shop</button>
                     <button class="popup-button" onclick="showMoreInfo('${station.name}', 'grocery', '<b>Grocery store:</b> ${station.grocery}', '${boxId}')">Grocery Store</button>
                     <button class="popup-button" onclick="showMoreInfo('${station.name}', 'sportsClothes', '<b>Sports/Clothing store:</b> ${station.sportsClothes}', '${boxId}')">Sport/Clothing Store</button>
